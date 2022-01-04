@@ -1,0 +1,185 @@
+@import "../../node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap-utilities.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+$primary: #FF7582;
+$primary-dark: #B3404C;
+$primary-light: #FF8F9A;
+
+$secondary: #2EB34C;
+$secondary-dark: #106624;
+$secondary-light: #5CFF82;
+
+$black: #000;
+$white: #FFF;
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+  padding: 1rem 0;
+  &-logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    span {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      line-height: 140%;
+      font-size: 0.8rem;
+      color: $gray-900;
+
+      strong {
+        font-size: 1.15rem;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &-button {
+    padding: .7rem 1.2rem;
+    background-color: $primary;
+    color: $white;
+    font-size: 0.875rem;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    transition: background-color .3s;
+
+    &:hover {
+      color: $white;
+      background-color: $primary-dark;
+    }
+  }
+}
+
+.footer {
+  padding: 4rem 0;
+  background-color: $primary-dark;
+
+  &-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 0 1.5rem;
+    padding: 0;
+    color: $white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Poppins, sans-serif;
+
+    span {
+      font-size: 1rem;
+      font-weight: normal;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  &-button {
+    padding: .75rem 1.15rem;
+    border: 1px solid $white;
+    border-radius: .5rem;
+    text-decoration: none;
+    color: $white;
+    display: flex;
+    gap: .5rem;
+    transition: all .3s;
+    &:hover {
+      background-color: $white;
+      color: $primary-dark;
+    }
+  }
+}
+
+.hero {
+  height: 100vh;
+  background-color: $primary;
+
+  &-image {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  &-content {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &-title {
+    margin: 0 0 1rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    color: $white;
+    font-weight: bold;
+    font-family: Poppins, sans-serif;
+
+    span {
+      font-size: 1.1rem;
+      font-weight: normal;
+      font-family: Ubuntu, sans-serif;
+    }
+  }
+
+  &-text {
+    margin: 0 0 1.5rem;
+    padding: 0;
+    color: $white;
+  }
+
+  &-button {
+    padding: .75rem 1.15rem;
+    border: 1px solid $white;
+    border-radius: .5rem;
+    text-decoration: none;
+    color: $white;
+    display: flex;
+    gap: .5rem;
+    transition: all .3s;
+    &:hover {
+      background-color: $white;
+      color: $primary-dark;
+    }
+  }
+}
+
+.credits {
+  padding: 1rem 0;
+  text-align: center;
+
+  span {
+    font-size: 0.875rem;
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      color: $black;
+    }
+  }
+}
